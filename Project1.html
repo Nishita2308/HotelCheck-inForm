@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>FORM</title>
+        <link rel="stylesheet" type="text/css" href="Project1.css">
+    </head>
+    <body>
+        <div class="container">
+
+        <a href="https://www.oberoihotels.com" > <img src="/OberoiHotels.jpg" 
+         alt="Click here to go to Oberoi Hotels" width="1100" height="300"></a>
+        <center><h1>HOTEL CHECK-IN form</h1></center><br>
+
+        <form>
+            <p><h3>Please complete the form given below.</h3></p>
+            <br>
+            <label>Firstname: <input type="text" name="firstname"></label>
+            <label>Lastname: <input type="text" name="lastname"></label>
+
+            <br><br><br>
+
+            <fieldset>
+                <legend><i>Personal Details</i></legend>
+                <label>Phone Number: <input type="text" name="phonenumber"></label><br><br>
+                <label>Email: <input type="email" name="email"></label><br><br>
+                <label>Address: </label>
+                <textarea rows="3" cols="70" name="address" id="address"></textarea>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><i>Date</i></legend>
+                <b>Date in dd-mm-yyyy</b><br><br>
+                <label for ="start">Check-In Date</label>
+                <input type="date" name="begin"
+                 placeholder="dd-mm-yyyy" value=""
+                 min="2021-04-16" max="2021-12-31">
+                <label for ="finish">Check-Out Date</label>
+                <input type="date" name="end"
+                 placeholder="dd-mm-yyyy" value=""
+                 min="2021-04-16" max="2021-12-31">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><i>Room Type</i></legend>
+                <label>Standard<input type="radio" name="roomtype" value="Standard"></label>
+                <label>Delux<input type="radio" name="roomtype" value="Delux"></label>
+                <label>Executive<input type="radio" name="roomtype" value="Executive"></label>
+                <label>Grand<input type="radio" name="roomtype" value="Grand"></label>
+                <label>Suite<input type="radio" name="roomtype" value="Suite"></label>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><i>Occupancy</i></legend>
+                <label for ="Adults">Adults per room</label>
+                <select name="Adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <label for ="Children">Children per room</label>
+                <select name="Children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><i>Dining</i></legend>
+                <label>Breakfast<input type="checkbox" name="dining" value="breakfast"></label>
+                <label>Lunch<input type="checkbox" name="dining" value="lunch"></label>
+                <label>Dinner<input type="checkbox" name="dining" value="dinner"></label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><i>Payment Method</i></legend>
+                <label>Cash<input type="radio" name="payment" value="Cash"></label>
+                <label>Cheque<input type="radio" name="payment" value="Cheque"></label>
+                <label>Online<input type="radio" name="payment" value="Online"></label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+               <legend><i>Special Requirements</i></legend>
+               <label></label>
+                <textarea rows="3" cols="70" name="address" id="address"></textarea>
+            </fieldset>
+
+            <br><br>
+
+            <center>
+            <input class="button" type="submit" name="Submit">
+
+            <input class="button" type="reset" name="Reset">
+            </center>
+            </div>
+        </form>
+
+        <footer>
+            <p class="text-white tm-footer-text">
+              Copyright &copy; 2021 Nishita Rupak Gupta.
+              Design:
+                <a href="#" class="footer-link">Nishita Rupak Gupta</a>
+            </p>
+          </footer>
+        </div>
+    </body>
+</html>
